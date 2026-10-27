@@ -1,0 +1,190 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Cartão do formulário */
+.form-box {
+    background-color: #ffffff;
+    padding: 40px 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.form-box h1 {
+    color: #333333;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.subtitle {
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Campos do formulário */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Destaque ao selecionar um campo */
+.input-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* Campos desativados */
+.input-group input:disabled {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+
+/* Texto auxiliar da senha */
+.input-group small {
+    display: block;
+    margin-top: 7px;
+    color: #777777;
+    font-size: 12px;
+}
+
+/* Recuperação de senha */
+.forgot-password {
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.forgot-password a {
+    color: #667eea;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Botão desativado */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Mensagens */
+.mensagem {
+    padding: 12px;
+    margin-top: 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.mensagem[hidden] {
+    display: none;
+}
+
+.mensagem.erro {
+    color: #842029;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+}
+
+.mensagem.sucesso {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: 1px solid #badbcc;
+}
+
+/* Texto inferior */
+.switch-text {
+    text-align: center;
+    color: #777777;
+    font-size: 14px;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.switch-text a {
+    color: #667eea;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 480px) {
+    .form-box {
+        padding: 30px 22px;
+    }
+
+    .form-box h1 {
+        font-size: 26px;
+    }
+}

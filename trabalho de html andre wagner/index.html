@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <section class="form-box">
+
+            <h1>Bem-vindo!</h1>
+            <p class="subtitle">Entre na sua conta para continuar</p>
+
+            <form action="#" method="post" data-tipo="login">
+
+                <div class="input-group">
+                    <label for="email-login">E-mail</label>
+                    <input
+                        type="email"
+                        id="email-login"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="senha-login">Senha</label>
+                    <input
+                        type="password"
+                        id="senha-login"
+                        name="senha"
+                        placeholder="Mínimo de 8 caracteres"
+                        minlength="8"
+                        autocomplete="current-password"
+                        required
+                    >
+                    <small>A senha deve ter pelo menos 8 caracteres.</small>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#" id="esqueceu-senha">Esqueceu sua senha?</a>
+                </div>
+
+                <button type="submit">Entrar</button>
+
+            </form>
+
+            <p id="mensagem" class="mensagem" role="alert" aria-live="polite" hidden></p>
+
+            <p class="switch-text">
+                Ainda não tem uma conta?
+                <a href="cadastro.html">Cadastre-se</a>
+            </p>
+
+        </section>
+    </main>
+
+</body>
+</html>
